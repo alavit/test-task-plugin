@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>org.jetbrains.test-task-plugin</id>
+    <name>Test Task</name>
+    <vendor email="test@task.com">jetbrains</vendor>
+
+    <description>A simple plugin to see what tasks you have to deal with.</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="org.jetbrains.TestTaskAction1" class="org.jetbrains.TestTaskAction1" text="Test Task Action 1"
+                description="Test task action 1">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+
+        <action id="org.jetbrains.TestTaskAction2" class="org.jetbrains.TestTaskAction2" text="Test Task Action 2"
+                description="Test task action 2">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+
+        <action id="org.jetbrains.TestTaskAction3" class="org.jetbrains.TestTaskAction3" text="Test Task Action 3"
+                description="Test task action 3">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+    </actions>
+</idea-plugin>
