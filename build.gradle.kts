@@ -10,10 +10,6 @@ repositories {
 group = "org.jetbrains"
 version = "1.0-SNAPSHOT"
 
-dependencies {
-    implementation(kotlin("stdlib"))
-}
-
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version.set("2024.1.4")
