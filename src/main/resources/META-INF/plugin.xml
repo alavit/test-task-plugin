@@ -29,5 +29,10 @@
                 description="Test task action 3">
             <add-to-group group-id="ToolsMenu"/>
         </action>
+
+        <action id="org.jetbrains.TestTaskAction4" class="org.jetbrains.TestTaskAction4" text="Test Task Action 4"
+                description="Test task action 4">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
     </actions>
 </idea-plugin>
