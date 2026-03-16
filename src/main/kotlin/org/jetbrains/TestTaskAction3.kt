@@ -88,7 +88,7 @@ class TestTaskAction3: AnAction() {
             null
         }
         val raw = accessible?.takeIf { it.isNotBlank() }
-            ?: renderer.featureId?.takeIf { it.isNotBlank() }
+            ?: renderer.featureId.takeIf { it.isNotBlank() }
             ?: return null
         var label = raw.removePrefix("icon:").trim()
         if (label.equals("unknown", ignoreCase = true)) return null
