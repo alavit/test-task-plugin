@@ -8,30 +8,34 @@
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
-        <action id="org.jetbrains.TestTaskAction1" class="org.jetbrains.TestTaskAction1" text="Test Task Action 1"
-                description="Test task action 1">
+        <action id="org.jetbrains.TestTaskAction1" class="org.jetbrains.TestTaskAction1"
+                text="Test Task Action 1"
+                description="Show installed Kotlin plugin version">
             <add-to-group group-id="ToolsMenu"/>
         </action>
 
-        <action id="org.jetbrains.TestTaskAction2" class="org.jetbrains.TestTaskAction2" text="Test Task Action 2"
-                description="Test task action 2">
+        <action id="org.jetbrains.TestTaskAction2" class="org.jetbrains.TestTaskAction2"
+                text="Test Task Action 2"
+                description="List project external libraries and SDK">
             <add-to-group group-id="ToolsMenu"/>
         </action>
 
-        <action id="org.jetbrains.TestTaskAction3" class="org.jetbrains.TestTaskAction3" text="Test Task Action 3"
-                description="Test task action 3">
+        <action id="org.jetbrains.TestTaskAction3" class="org.jetbrains.TestTaskAction3"
+                text="Test Task Action 3"
+                description="Open Main.kt and display line markers">
             <add-to-group group-id="ToolsMenu"/>
         </action>
 
-        <action id="org.jetbrains.TestTaskAction4" class="org.jetbrains.TestTaskAction4" text="Test Task Action 4"
-                description="Test task action 4">
+        <action id="org.jetbrains.TestTaskAction4" class="org.jetbrains.TestTaskAction4"
+                text="Test Task Action 4"
+                description="Run Main.kt and verify exit code is 0">
             <add-to-group group-id="ToolsMenu"/>
         </action>
     </actions>
