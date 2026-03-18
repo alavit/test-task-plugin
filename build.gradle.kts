@@ -13,6 +13,7 @@ version = "1.0-SNAPSHOT"
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version.set("2024.1.4")
+    plugins.set(listOf("org.jetbrains.kotlin"))
 }
 
 kotlin {
@@ -20,6 +21,10 @@ kotlin {
 }
 
 tasks {
+    test {
+        systemProperty("NO_FS_ROOTS_ACCESS_CHECK", "true")
+    }
+
     patchPluginXml {
         version.set("${project.version}")
         changeNotes.set("""
